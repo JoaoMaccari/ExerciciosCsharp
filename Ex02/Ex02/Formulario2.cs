@@ -9,8 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Ex02 {
-    public partial class Form1 : Form {
-        public Form1() {
+    public partial class Formulario2 : Form {
+        public Formulario2() {
             InitializeComponent();
         }
 
@@ -36,14 +36,29 @@ namespace Ex02 {
 
         private void button1_Click(object sender, EventArgs e) {
             string nome, cidade;
-            int dataNasc;
+            DateTime dataNasc;
+            bool generoM;
+            bool generoF;
+            int numeroCadastro;
 
             nome = textBox1.Text;
-            dataNasc = Convert.ToInt32(dateTimePicker2.Value);
+            dataNasc = dateTimePicker2.Value;
             cidade = comboBox1.Text;
+            generoM = radioButton1.Checked;
+            generoF = radioButton2.Checked;
+            numeroCadastro = Convert.ToInt32(textCadastro.Text);
 
             MessageBox.Show("Nome: " + nome);
+            MessageBox.Show("Data Nascimento: " + dataNasc);
+            MessageBox.Show("Cidade: " + cidade);
+            MessageBox.Show("Gênero Masculino " + generoM);
+            MessageBox.Show("Gênero Feminino " + generoF);
+            MessageBox.Show("Número de Cadastro: " + numeroCadastro);
             
+        }
+
+        private void Form1_Load(object sender, EventArgs e) {
+
         }
     }
 }
