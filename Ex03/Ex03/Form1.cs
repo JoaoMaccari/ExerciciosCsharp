@@ -13,5 +13,21 @@ namespace Ex03 {
         public Form1() {
             InitializeComponent();
         }
+
+        private void label1_Click(object sender, EventArgs e) {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e) {
+            string senha = "123456";
+            string login = "joaoMaccari";
+
+            if (txtLogin.Text == login && txtSenha.Text == senha) {
+                MessageBox.Show("Conectado");
+            }
+            else {
+                MessageBox.Show("Login / senha incorretos");
+            }
+        }
     }
 }
