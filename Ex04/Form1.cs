@@ -10,9 +10,17 @@ using System.Windows.Forms;
 
 namespace Ex04 {
     public partial class Form1 : Form {
+
+        public int num;
+        public string veiculosForm2;
+
         public Form1() {
             InitializeComponent();
+
+            num = 0;
+
         }
+       
 
         private void btn_add_Click(object sender, EventArgs e) {
             if (txb_inputVeiculo.Text == "") {
@@ -40,12 +48,16 @@ namespace Ex04 {
         }
 
         private void btn_enviar_Click(object sender, EventArgs e) {
-            Form2 newForm = new Form2(txb_listaVeiculo.Text);
+            Form2 newForm = new Form2(txb_listaVeiculo.Text, this);
             newForm.ShowDialog();
         }
 
         private void btn_add_KeyPress(object sender, KeyPressEventArgs e) {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e) {
+            MessageBox.Show(num.ToString());
         }
     }
 }

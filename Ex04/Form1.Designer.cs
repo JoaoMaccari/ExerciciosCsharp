@@ -30,6 +30,7 @@ namespace Ex04 {
             this.txb_inputVeiculo = new System.Windows.Forms.TextBox();
             this.txb_listaVeiculo = new System.Windows.Forms.TextBox();
             this.btn_enviar = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbl_insert
@@ -91,11 +92,23 @@ namespace Ex04 {
             this.btn_enviar.UseVisualStyleBackColor = true;
             this.btn_enviar.Click += new System.EventHandler(this.btn_enviar_Click);
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(243, 167);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(126, 31);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "MOSTRAR";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(383, 258);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btn_enviar);
             this.Controls.Add(this.txb_listaVeiculo);
             this.Controls.Add(this.txb_inputVeiculo);
@@ -118,8 +131,9 @@ namespace Ex04 {
         private System.Windows.Forms.Button btn_add;
         private System.Windows.Forms.Button btn_apagar;
         private System.Windows.Forms.TextBox txb_inputVeiculo;
-        private System.Windows.Forms.TextBox txb_listaVeiculo;
         private System.Windows.Forms.Button btn_enviar;
+        private System.Windows.Forms.Button button1;
+        public System.Windows.Forms.TextBox txb_listaVeiculo;
     }
 }
 
