@@ -29,6 +29,7 @@ namespace Ex04 {
             this.btn_apagar = new System.Windows.Forms.Button();
             this.txb_inputVeiculo = new System.Windows.Forms.TextBox();
             this.txb_listaVeiculo = new System.Windows.Forms.TextBox();
+            this.btn_enviar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbl_insert
@@ -51,6 +52,7 @@ namespace Ex04 {
             this.btn_add.Text = "ADICIONAR";
             this.btn_add.UseVisualStyleBackColor = true;
             this.btn_add.Click += new System.EventHandler(this.btn_add_Click);
+            this.btn_add.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.btn_add_KeyPress);
             // 
             // btn_apagar
             // 
@@ -61,6 +63,7 @@ namespace Ex04 {
             this.btn_apagar.TabIndex = 2;
             this.btn_apagar.Text = "APAGAR";
             this.btn_apagar.UseVisualStyleBackColor = true;
+            this.btn_apagar.Click += new System.EventHandler(this.btn_apagar_Click);
             // 
             // txb_inputVeiculo
             // 
@@ -77,11 +80,23 @@ namespace Ex04 {
             this.txb_listaVeiculo.Size = new System.Drawing.Size(225, 158);
             this.txb_listaVeiculo.TabIndex = 4;
             // 
+            // btn_enviar
+            // 
+            this.btn_enviar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_enviar.Location = new System.Drawing.Point(243, 121);
+            this.btn_enviar.Name = "btn_enviar";
+            this.btn_enviar.Size = new System.Drawing.Size(126, 31);
+            this.btn_enviar.TabIndex = 5;
+            this.btn_enviar.Text = "ENVIAR";
+            this.btn_enviar.UseVisualStyleBackColor = true;
+            this.btn_enviar.Click += new System.EventHandler(this.btn_enviar_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(383, 258);
+            this.Controls.Add(this.btn_enviar);
             this.Controls.Add(this.txb_listaVeiculo);
             this.Controls.Add(this.txb_inputVeiculo);
             this.Controls.Add(this.btn_apagar);
@@ -104,6 +119,7 @@ namespace Ex04 {
         private System.Windows.Forms.Button btn_apagar;
         private System.Windows.Forms.TextBox txb_inputVeiculo;
         private System.Windows.Forms.TextBox txb_listaVeiculo;
+        private System.Windows.Forms.Button btn_enviar;
     }
 }
 
