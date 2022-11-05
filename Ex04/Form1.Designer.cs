@@ -31,13 +31,18 @@ namespace Ex04 {
             this.txb_listaVeiculo = new System.Windows.Forms.TextBox();
             this.btn_enviar = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.componentesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.checkBoxToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.checkedListBoxToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lbl_insert
             // 
             this.lbl_insert.AutoSize = true;
             this.lbl_insert.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_insert.Location = new System.Drawing.Point(9, 40);
+            this.lbl_insert.Location = new System.Drawing.Point(9, 104);
             this.lbl_insert.Name = "lbl_insert";
             this.lbl_insert.Size = new System.Drawing.Size(122, 18);
             this.lbl_insert.TabIndex = 0;
@@ -46,7 +51,7 @@ namespace Ex04 {
             // btn_add
             // 
             this.btn_add.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_add.Location = new System.Drawing.Point(243, 33);
+            this.btn_add.Location = new System.Drawing.Point(243, 97);
             this.btn_add.Name = "btn_add";
             this.btn_add.Size = new System.Drawing.Size(126, 26);
             this.btn_add.TabIndex = 1;
@@ -58,7 +63,7 @@ namespace Ex04 {
             // btn_apagar
             // 
             this.btn_apagar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_apagar.Location = new System.Drawing.Point(243, 74);
+            this.btn_apagar.Location = new System.Drawing.Point(243, 138);
             this.btn_apagar.Name = "btn_apagar";
             this.btn_apagar.Size = new System.Drawing.Size(126, 29);
             this.btn_apagar.TabIndex = 2;
@@ -68,14 +73,14 @@ namespace Ex04 {
             // 
             // txb_inputVeiculo
             // 
-            this.txb_inputVeiculo.Location = new System.Drawing.Point(137, 38);
+            this.txb_inputVeiculo.Location = new System.Drawing.Point(137, 102);
             this.txb_inputVeiculo.Name = "txb_inputVeiculo";
             this.txb_inputVeiculo.Size = new System.Drawing.Size(100, 20);
             this.txb_inputVeiculo.TabIndex = 3;
             // 
             // txb_listaVeiculo
             // 
-            this.txb_listaVeiculo.Location = new System.Drawing.Point(12, 76);
+            this.txb_listaVeiculo.Location = new System.Drawing.Point(12, 140);
             this.txb_listaVeiculo.Multiline = true;
             this.txb_listaVeiculo.Name = "txb_listaVeiculo";
             this.txb_listaVeiculo.Size = new System.Drawing.Size(225, 158);
@@ -84,7 +89,7 @@ namespace Ex04 {
             // btn_enviar
             // 
             this.btn_enviar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_enviar.Location = new System.Drawing.Point(243, 121);
+            this.btn_enviar.Location = new System.Drawing.Point(243, 185);
             this.btn_enviar.Name = "btn_enviar";
             this.btn_enviar.Size = new System.Drawing.Size(126, 31);
             this.btn_enviar.TabIndex = 5;
@@ -95,7 +100,7 @@ namespace Ex04 {
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(243, 167);
+            this.button1.Location = new System.Drawing.Point(243, 231);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(126, 31);
             this.button1.TabIndex = 6;
@@ -103,11 +108,44 @@ namespace Ex04 {
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.componentesToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(383, 24);
+            this.menuStrip1.TabIndex = 7;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // componentesToolStripMenuItem
+            // 
+            this.componentesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.checkBoxToolStripMenuItem,
+            this.checkedListBoxToolStripMenuItem});
+            this.componentesToolStripMenuItem.Name = "componentesToolStripMenuItem";
+            this.componentesToolStripMenuItem.Size = new System.Drawing.Size(94, 20);
+            this.componentesToolStripMenuItem.Text = "Componentes";
+            // 
+            // checkBoxToolStripMenuItem
+            // 
+            this.checkBoxToolStripMenuItem.Name = "checkBoxToolStripMenuItem";
+            this.checkBoxToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.checkBoxToolStripMenuItem.Text = "CheckBox";
+            this.checkBoxToolStripMenuItem.Click += new System.EventHandler(this.checkBoxToolStripMenuItem_Click);
+            // 
+            // checkedListBoxToolStripMenuItem
+            // 
+            this.checkedListBoxToolStripMenuItem.Name = "checkedListBoxToolStripMenuItem";
+            this.checkedListBoxToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.checkedListBoxToolStripMenuItem.Text = "CheckedListBox";
+            this.checkedListBoxToolStripMenuItem.Click += new System.EventHandler(this.checkedListBoxToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(383, 258);
+            this.ClientSize = new System.Drawing.Size(383, 328);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btn_enviar);
             this.Controls.Add(this.txb_listaVeiculo);
@@ -115,11 +153,16 @@ namespace Ex04 {
             this.Controls.Add(this.btn_apagar);
             this.Controls.Add(this.btn_add);
             this.Controls.Add(this.lbl_insert);
+            this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -134,6 +177,10 @@ namespace Ex04 {
         private System.Windows.Forms.Button btn_enviar;
         private System.Windows.Forms.Button button1;
         public System.Windows.Forms.TextBox txb_listaVeiculo;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem componentesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem checkBoxToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem checkedListBoxToolStripMenuItem;
     }
 }
 

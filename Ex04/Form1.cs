@@ -48,6 +48,8 @@ namespace Ex04 {
         }
 
         private void btn_enviar_Click(object sender, EventArgs e) {
+
+            //botão que instancia um objeto do tipo Form2
             Form2 newForm = new Form2(txb_listaVeiculo.Text, this);
             newForm.ShowDialog();
         }
@@ -58,6 +60,16 @@ namespace Ex04 {
 
         private void button1_Click(object sender, EventArgs e) {
             MessageBox.Show(num.ToString());
+        }
+
+        private void checkBoxToolStripMenuItem_Click(object sender, EventArgs e) {
+            Form3 f_checkbox = new Form3();
+            f_checkbox.ShowDialog();
+        }
+
+        private void checkedListBoxToolStripMenuItem_Click(object sender, EventArgs e) {
+            Form4 f_checkedListBox = new Form4();
+            f_checkedListBox.ShowDialog();
         }
     }
 }

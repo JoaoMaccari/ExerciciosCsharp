@@ -10,8 +10,11 @@ using System.Windows.Forms;
 
 namespace Ex04 {
     public partial class Form2 : Form {
+
         Form1 fp;
 
+
+        //construtor do form2. vai solicitar 2 parametros toda vez que instanciar um objeto do tipo fomr2
         public Form2(string v, Form1 f) {
             InitializeComponent();
 
