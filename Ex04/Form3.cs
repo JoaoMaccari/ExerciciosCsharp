@@ -16,6 +16,8 @@ namespace Ex04 {
 
         public Form3() {
             InitializeComponent();
+
+            //no construtor já adiciono todos as labels a lista
             transportes.Add(cb_carro);
             transportes.Add(cb_aviao);
             transportes.Add(cb_navio);
@@ -35,6 +37,11 @@ namespace Ex04 {
 
             MessageBox.Show(txt);
             
+        }
+
+        private void button2_Click(object sender, EventArgs e) {
+            Filho_form3 filho_form3 = new Filho_form3();
+            filho_form3.ShowDialog();
         }
     }
 }
