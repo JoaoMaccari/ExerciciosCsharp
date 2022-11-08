@@ -50,7 +50,7 @@ namespace Ex04 {
         private void btn_enviar_Click(object sender, EventArgs e) {
 
             //botão que instancia um objeto do tipo Form2
-
+            
             //passagem de 2 parametros para o formulario 2
             Form2 newForm = new Form2(txb_listaVeiculo.Text, this);
             newForm.ShowDialog();
@@ -72,6 +72,28 @@ namespace Ex04 {
         private void checkedListBoxToolStripMenuItem_Click(object sender, EventArgs e) {
             Form4 f_checkedListBox = new Form4();
             f_checkedListBox.ShowDialog();
+        }
+
+        private void comboBoxToolStripMenuItem_Click(object sender, EventArgs e) {
+            Form5 f_combobox = new Form5();
+            f_combobox.ShowDialog();
+        }
+
+        private void dateTimePickerToolStripMenuItem_Click(object sender, EventArgs e) {
+            Form6 f_dateTimePicker = new Form6();
+            f_dateTimePicker.ShowDialog();
+
+            
+        }
+
+        private void lbellinkLabelToolStripMenuItem_Click(object sender, EventArgs e) {
+            Form7 f_linkLabel = new Form7();
+            f_linkLabel.ShowDialog();
+        }
+
+        private void listBoxToolStripMenuItem_Click(object sender, EventArgs e) {
+            Form8 f_listBox = new Form8();
+            f_listBox.ShowDialog();
         }
     }
 }
